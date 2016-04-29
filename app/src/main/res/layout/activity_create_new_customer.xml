@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    tools:context="com.stoneryan.android.clientmanager.CreateNewCustomerActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/new_customer_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/darker_gray"
+            android:cropToPadding="true"
+            android:paddingRight="10dp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_customer_camera"
+            android:layout_marginLeft="10dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tablelayout"
+                android:layout_marginBottom="8dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="@string/name_tv"
+                        android:layout_column="0"/>
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCustomerName"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/address_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCustomerAddress"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/phone_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCustomerPhone"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/email_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCustomerEmail"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/card_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCardNum"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/exp_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCardExp"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/ccv_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCardCVV"
+                        android:layout_column="1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/zip_tv"
+                        android:layout_column="0"/>
+
+                    <EditText
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/newCardZIP"
+                        android:layout_column="1"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="20">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save"
+            android:id="@+id/save_button"
+            android:onClick="SaveButton"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_cancel"
+            android:id="@+id/cancel_button"
+            android:onClick="CancelButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

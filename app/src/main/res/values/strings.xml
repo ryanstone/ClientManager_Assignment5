@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Client Manager</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="username">jdoe</string>
+    <string name="password">welcome1</string>
+    <string name="action_new_customer">Enter New Customer</string>
+    <string name="action_view_customers">View Customers</string>
+    <string name="action_take_picture">Take a Picture</string>
+    <string name="display_username_fragment">"Logged In: "</string>
+    <string name="name_tv">"Name: "</string>
+    <string name="date_tv">"Date: "</string>
+    <string name="address_tv">"Address: "</string>
+    <string name="phone_tv">"Phone: "</string>
+    <string name="email_tv">"Email: "</string>
+    <string name="card_tv">"Card #: "</string>
+    <string name="exp_tv">"Expiration: "</string>
+    <string name="ccv_tv">"CCV: "</string>
+    <string name="zip_tv">"Zip Code: "</string>
+    <string name="start_date_tv">"Start Date: "</string>
+    <string name="time_tv">"Time: "</string>
+    <string name="frequency_tv">"Frequency: "</string>
+    <string name="quantity_tv">"Quantity: "</string>
+    <string name="total_price_tv">"Total Price: "</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">"Save"</string>
+    <string name="action_back">Back</string>
+    <string name="action_view_sessions">View Sessions</string>
+    <string name="action_add_session">Add Session</string>
+    <string name="action_enter_billing_info">Enter Billing Info</string>
+    <string name="action_purchase">Purchase</string>
+    <string name="action_email">Email</string>
+    <string name="action_print">Print</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="save_customer_confirm">Customer saved.</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm">Sign out?</string>
+    <string name="session_completed">Session completed.</string>
+    <string name="session_purchased">Session purchased.</string>
+    <string name="billing_info_saved">Billing info saved.</string>
+    <string name="logged_out">Please sign in.</string>
+    <string name="total_price">$50.00</string>
+</resources>

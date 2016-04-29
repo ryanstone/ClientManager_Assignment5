@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp"
+             tools:context="layout.DisplayUsernameFragment"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display_username_fragment"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_tv"
+        android:text=""/>
+
+</LinearLayout>
